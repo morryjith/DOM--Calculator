@@ -1,0 +1,15 @@
+*{
+    padding:0 ;
+}
+.calc-body{
+    background-color: brown;
+    padding: 500px;
+    
+}
+.calc-button-row{
+    background-color: brown;
+}
+.btn{
+    background-color: cadetblue;
+    padding: 10px;
+}

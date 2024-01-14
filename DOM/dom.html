@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first">DOM 1</h1>
+    <h1 class="cls">DOM 2</h1>
+
+    <ul>
+        <li class="cls">document.getElementsByTagName('h1')</li>
+      <!-- 1  hone=document.getElementsByTagName('h1') -->
+        <!--2 HTMLCollection(2) [h1#first, h1.cls, first: h1#first] -->
+        <!--3 Array.from(hone).map(tag=>tag.style.color="red") -->
+        <li class="cls">document.getElementById('id_name')</li>
+        <!--1 hone=document.getElementById('first') -->
+        <!--2 hone.style.color="blue" -->
+        <!--3 'blue' -->
+        <li>document.getElementByClassName('class_name')</li>
+        <!--1 hone=document.getElementsByClassName('cls') -->
+        <!-- HTMLCollection(3) [h1.cls, li.cls, li.cls] -->
+        <!--2 [...hone] -->
+        <!-- (3) [h1.cls, li.cls, li.cls] -->
+        <!--3 [...hone].map(item=>item.style.color="pink") -->
+        <!-- (3) ['pink', 'pink', 'pink'] -->
+        <li>document.querySelector('')</li>
+        <!-- hone=document.querySelector('h1') -->
+        <li>document.querySelectorAll('')</li>
+        <!-- hone=document.querySelectorAll('h1') -->
+
+        
+        <!-- hone=document.querySelectorAll('.cls') -->
+<!-- NodeList(3) [h1.cls, li.cls, li.cls] -->
+<!-- hone=document.querySelector('#first')​ -->
+<!-- hone=document.querySelectorAll('.first') -->
+         
+    </ul>
+</body>
+</html>
